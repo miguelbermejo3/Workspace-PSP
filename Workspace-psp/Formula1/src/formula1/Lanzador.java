@@ -22,7 +22,7 @@ public class Lanzador {
 			hiloHamilton.join();
 			hiloSainz.join();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		

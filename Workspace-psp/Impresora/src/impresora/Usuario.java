@@ -13,7 +13,12 @@ public class Usuario implements Runnable {
 	public void escribir() {
 		for (int i = 1; true; i++) {
 			String texto = "Texto " + i;
-			impresora.imprimir(nombre, texto);
+			try {
+				impresora.imprimir(nombre, texto);
+			} catch (Exception e) {
+				
+				e.printStackTrace();
+			}
 		}
 	}
 

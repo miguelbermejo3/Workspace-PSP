@@ -11,6 +11,9 @@ public class Lanzador {
 			hiloAlumno.start();
 		}
 		
+		
+		
+		
 		for (int i = 0; i < 20; i++) {
 			Profesor profesor = new Profesor(cafeteria);
 			Thread hiloProfesor = new Thread(profesor);
